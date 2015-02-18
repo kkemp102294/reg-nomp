@@ -228,22 +228,38 @@
 
     <div id="main">
         <a href="#" class="miningOption" id="nompAppDownload">
-            <div class="miningOptionNum">1.</div>
+            <div class="miningOptionNum">   </div>
             <div class="miningOptionInstructions">
-                <div>Download NOMP App</div>
-                <div>Our preconfigured app makes mining that easy</div>
+                <div>Global Stats</div>
+                <div class="boxStatsList">
+                  {{ for(var algo in it.stats.algos) { }}
+                <div>
+                    <div><i class="fa fa-flask"></i>{{=algo}}</div>
+                    <div><i class="fa fa-users"></i><span id="statsMiners{{=algo}}">{{=it.stats.algos[algo].workers}}</span> Miners</div>
+                    <div><i class="fa fa-tachometer"></i><span id="statsHashrate{{=algo}}">{{=it.stats.algos[algo].hashrateString}}</span></div>
+                </div>
+                {{ } }}
+            </div>
             </div>
         </a>
         <div id="orHolder">
             <div id="orLine"></div>
-            <div id="orText">or</div>
+            <div id="orText"></div>
         </div>
         <a href="#" class="miningOption" id="coinGlowTrigger">
-            <div class="miningOptionNum">2.</div>
+            <div class="miningOptionNum">   </div>
             <div class="miningOptionInstructions">
-                <div>Select a coin for connection details</div>
-                <div>Configurations for each coin are available for advanced miners</div>
+            <div class="boxLowerHeader">Pools / Coins</div>
+            <div class="boxStatsList">
+                {{ for(var pool in it.stats.pools) { }}
+                <div>
+                    <div><i class="fa fa-dot-circle-o"></i>{{=pool}}</div>
+                    <div><i class="fa fa-users"></i><span id="statsMiners{{=pool}}">{{=it.stats.pools[pool].workerCount}}</span> Miners</div>
+                    <div><i class="fa fa-tachometer"></i><span id="statsHashrate{{=pool}}">{{=it.stats.pools[pool].hashrateString}}</span></div>
+                </div>
+                {{ } }}
             </div>
+          </div>
         </a>
     </div>
 </div>
