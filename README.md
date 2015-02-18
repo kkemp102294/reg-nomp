@@ -8,13 +8,6 @@ responsive user-friendly front-end website featuring mining instructions, in-dep
 #### Production Usage Notice
 This is beta software. All of the following are things that can change and break an existing NOMP setup: functionality of any feature, structure of configuration files and structure of redis data. If you use this software in production then *DO NOT* pull new code straight into production usage because it can and often will break your setup and require you to tweak things like config files or redis data.
 
-#### Paid Solution
-Usage of this software requires abilities with sysadmin, database admin, coin daemons, and sometimes a bit of programming. Running a production pool can literally be more work than a full-time job. [LiveChains UK](http://www.livechains.net/) offers full hosting, setup and management of NOMP pools with several different configurations.
-
-
-**Coin switching & auto-exchanging for payouts in BTC/LTC** to miners is a feature that very likely will not be included in this project. [LiveChains UK](http://www.livechains.net/) however does offer this feature as part of there own customised NOMP called [LivePool](http://www.livechains.net/LivePool.html).
-
-
 #### Table of Contents
 * [Features](#features)
   * [Attack Mitigation](#attack-mitigation)
@@ -99,10 +92,10 @@ redistribute the work to our own connected miners.
 
 ### Community / Support
 IRC
-* Support / general discussion join #nomp: https://webchat.freenode.net/?channels=#nomp
-* Development discussion join #nomp-dev: https://webchat.freenode.net/?channels=#nomp-dev
+* Support / general discussion join #nomp: https://webchat.freenode.net/?channels=#altnuts
+* Development discussion join #nomp-dev: https://webchat.freenode.net/?channels=#altnuts-dev
 
-Join our subreddit [/r/nomp](http://reddit.com/r/nomp)!
+Join our subreddit [/r/nomp](http://reddit.com/r/altnuts)!
 
 *Having problems getting the portal running due to some module dependency error?* It's probably because you
 didn't follow the instructions in this README. Please __read the usage instructions__ including [requirements](#requirements) and [downloading/installing](#1-downloading--installing). If you've followed the instructions completely and are still having problems then open an issue here on github or join our #nomp IRC channel and explain your problem :).
@@ -110,23 +103,7 @@ didn't follow the instructions in this README. Please __read the usage instructi
 If your pool uses NOMP let us know and we will list your website here.
 
 ##### Some pools using NOMP or node-stratum-module:
-* http://chunkypools.com
-* http://clevermining.com
-* http://rapidhash.net
-* http://suchpool.pw
-* http://hashfaster.com
-* http://miningpoolhub.com
-* http://teamdoge.com
-* http://miningwith.us
-* http://kryptochaos.com
-* http://uberpools.org
-* http://onebtcplace.com
-* http://minr.es
-* http://mining.theminingpools.com
-* http://www.omargpools.ca/pools.html
-* http://pool.trademybit.com/
-* http://fixminer.com
-* http://poollo.com
+* http://altnuts.com
 
 Usage
 =====
@@ -540,31 +517,9 @@ the `node-stratum-pool` and `node-multi-hashing` modules, and any config files t
 
 Donations
 ---------
-To support development of this project feel free to donate :)
+To support development of this project feel free to mine at [AltNuts.com](http://altnuts.com) :)
 
-* BTC: `1KRotMnQpxu3sePQnsVLRy3EraRFYfJQFR`
-* LTC: `LKfavSDJmwiFdcgaP1bbu46hhyiWw5oFhE`
-* VTC: `VgW4uFTZcimMSvcnE4cwS3bjJ6P8bcTykN`
-* MAX: `mWexUXRCX5PWBmfh34p11wzS5WX2VWvTRT`
-* QRK: `QehPDAhzVQWPwDPQvmn7iT3PoFUGT7o8bC`
-* DRK: `XcQmhp8ANR7okWAuArcNFZ2bHSB81jpapQ`
-* DOGE: `DBGGVtwAAit1NPZpRm5Nz9VUFErcvVvHYW`
-* Cryptsy Trade Key: `254ca13444be14937b36c44ba29160bd8f02ff76`
-
-Credits
--------
-* [Jerry Brady / mintyfresh68](https://github.com/bluecircle) - got coin-switching fully working and developed proxy-per-algo feature
-* [Tony Dobbs](http://anthonydobbs.com) - designs for front-end and created the NOMP logo
-* [LucasJones](//github.com/LucasJones) - got p2p block notify working and implemented additional hashing algos
-* [vekexasia](//github.com/vekexasia) - co-developer & great tester
-* [TheSeven](//github.com/TheSeven) - answering an absurd amount of my questions and being a very helpful gentleman
-* [UdjinM6](//github.com/UdjinM6) - helped implement fee withdrawal in payment processing
-* [Alex Petrov / sysmanalex](https://github.com/sysmanalex) - contributed the pure C block notify script
-* [svirusxxx](//github.com/svirusxxx) - sponsored development of MPOS mode
-* [icecube45](//github.com/icecube45) - helping out with the repo wiki
-* [Fcases](//github.com/Fcases) - ordered me a pizza <3
-* Those that contributed to [node-stratum-pool](//github.com/zone117x/node-stratum-pool#credits)
-
+Past Credits can be found [here](//github.com/zone117x/node-stratum-pool#credits) and [here](//github.com/zone117x/node-open-mining-portal#credits).
 
 License
 -------
